@@ -1,0 +1,22 @@
+public class EX2 {
+
+	public static int max(int[] m) {
+		   int max_num=m[0];
+		   int count=1;
+		   while (count<m.length){
+			   if(m[count]>max_num){
+				   max_num=m[count];
+			   }
+			   
+			   count=count+1;
+		   }
+	       
+	       return max_num;
+	}
+	
+	public static void main(String[] args) {
+	    int[] numbers = new int[]{9, 2, 15, 2, 22, 10, 6}; 
+	    System.out.print(max(numbers));
+	}
+
+}
